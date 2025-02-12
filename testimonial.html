@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StephenHonea.com</title>
+    <link href="style.css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/5fd7022fb8.js" crossorigin="anonymous"></script>
+	<style>		
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	</style>
+</head>
+<body>
+    <!-- Centering the Entire Document -->
+    <center> 
+    <div class="Container">
+        <div class="FirstRow">
+            <div class="Logo"><p class="LogoStephen Quicksand">Stephen</p><p class="LogoHonea Quicksand">Honea</p><p class="LogoCom Quicksand">.com</p></div>
+            <div class="Menu"><a href="index.html">Home</a></div>
+        </div>
+        <div class="SecondRow NewRow">
+            <div class="GoogleReviewCard TwoStack">
+                <fieldset class="GoogleFieldSet">
+
+                    <legend class="GoogleLegend Quicksand">Google Review</legend>
+              
+                    <div class="ReviewRequest">
+                        Great agents have great reviews!
+                        <br>
+                        <br>
+                        I would appreciate it very much if you would let others know about our experience togeather.
+                        <br>
+                        <br>
+                        If you happen to have a google account, please click the <a href="https://g.page/r/CbTu_qj_6I8-EAI/review">Google Review Link <i class="fa-solid fa-up-right-from-square"></i></a> to post a review!
+                        <br>
+                        <br>
+                        If you don't have a Google account, or would prefer to post a message here, please fill out the form and click the Submit Review button.
+                      </div>
+                </fieldset>    
+            </div>
+            <div class="LocalTestimonialCard TwoStack">
+                <div class="TestimonialForm">
+                    <fieldset class="LocalTestimonialFieldSet">
+                        <legend class="LocalTestimonialLegend Quicksand">Testimonial</legend>
+                        <!--
+                        The star rating is fround on stack overflor's website
+                        https://stackoverflow.com/questions/71357920/how-does-this-star-rating-work-how-does-it-know-how-to-select-all-the-stars-bel
+                        parcing the form data from stefano.brilli.me
+                        https://stefano.brilli.me/google-forms-html-exporter/?ref=mrinalcs.github.io
+                        -->
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScGfjD9gpPESEDz7hzI1ilojnuKVt0iXzIeAavis7WNux0D8g/formResponse" target="_blank" id="bootstrapForm" method="POST">
+                        <div class="FormLabel"><label for="76865779">Name</label></div>
+                        <div class="FormInput"><input id="1008116590" type="text" name="entry.1008116590" class="FormInputText" placeholder="John Smith"></div>
+                        <div class="FormLabel"><label for="1136825752">Rating</label></div>
+                        <div class="FormInput">
+                        <div class="FormInputRatingPosition">
+                        <fieldset class="FormInputText FormInputRating rating">
+                            <input type="radio" name="entry.1199812168" title="star5" value="5" checked />
+                            <input type="radio" name="entry.1199812168" title="star4" value="4" />
+                            <input type="radio" name="entry.1199812168" title="star3" value="3" />
+                            <input type="radio" name="entry.1199812168" title="star2" value="2" />
+                            <input type="radio" name="entry.1199812168" title="star1" value="1" />
+                        </fieldset>
+                        </div>
+                        </div>
+                        <div class="FormLabel"><label for="628901356">Testimonial</label></div>
+                        <div class="FormInput"><textarea id="1972868550" name="entry.1972868550" class="FormInputText" rows="5" placeholder="Let me know your thoughts."></textarea></div>
+                        <div class="FormSubmit"><input class="SubmitForm" type="submit" value="Submit Review"></div>
+                        <input type="hidden" name="fvv" value="1">
+                        <input type="hidden" name="fbzx" value="3117662236828752225">
+                        <!--
+                            CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                            This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                            Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                            We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                        -->
+                        <input type="hidden" name="pageHistory" value="0">
+                    </form>
+                    </fieldset>
+                    </div>
+            </div>
+        </div>    
+        <div class="SecondRow NewRow">
+            <div class="PreviousReviews Quicksand">
+                <hr>
+                Below are some previous client Testimonials/Reviews.
+                <hr> 
+            </div>           
+        </div>
+        <div class="ThirdRow NewRow">
+            <div class="TestimonialContent">
+	  
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Melmary">Melmary Matheny</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Stephen Honea is the absolute best agent that anyone can work with. He was very patent with us. He took in consideration everything we was looking for in our new house. He was very informative and took his time explaining everything we had questions about. He met my whole family and everyone absolutely loved him. Very kind caring person. Went over the whole buying process step by step and had wonderful resources. He made our buying process seem so easy. We just moved in to our new home and absolutely love it. I’ve already recommended him to several of my co-workers thsts looking into buying new home. I would definitely recommend him to anyone, I promise you will not be disappointed.
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Suzanne">Suzanne Parks Prout</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Outstanding realtor. Very professional and took care of all my buyers needs.
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Phyllis">Phyllis Forest</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Regina and Stephen were a great team and made both selling the old home and purchasing the new home an easy and worry-free experience. They were better than excellent.
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Charlotte">Charlotte</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Regina and Stephen, Charlotte and I would like to thank you both for the work you two put into the sale of our home of 29 years. Form the moment I walked into Gardner Realtors back in Oct 15, 2019, and talked with both of you I felt like we had a connection. I explained what Charlotte and I wanted to do to sale our home and you guys just said, "let us know when". Boy! I was extra surprised when I turned it over to you guys. What a TEAM we made! You took the home and ran with it. I believe you hit the date right on when you said it would sale. Thanks for walking us through the sale process and helping making the new owner feel at home as well! When somebody ask about buying or wanting to sale a home, I will give them your names. Thanks! Charlotte and Glen Niven
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Glen">Glen Niven</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Stephen and Regina is definitely 5 Stars. This awesome team worked many hours to assure a great outcome for me. They asked many questions and offered great advice. This was my 4th home purchase but the 1st time the realtor went over every item on the inspection report with me* line by line. The closing went smooth. But what impressed me the most was after the closing* they are still available for all my questions. Thanks Stephen and Regina. I appreciate all your hard work. I highly recommend this awesome team.
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+                
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Joe">Joe Lucore</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Stephen and Regina were invaluable assets in the sale of our old home and purchase of our new home when we decided to downsize.  Their team of cohesive expertise worked perfectly together.  Regina's negotiating expertise made our home purchase seem effortless.  While Stephen took timeout of his busy schedule to track down oven parts and used his knowledge of home repair and VA loan specific requirements to ensure our home was ready for the buyer of our home.  All the while* both made sure to calm our anxiety of the home buying and selling processes.
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+        
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Teresa">Teresa Turner O'neal</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Great Guy with wonderful personality. He is extremely knowledgeable of the real estate market and what it takes to get his clients in their dream home!
+                  </div>
+                  <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+        
+                <div class="Testimony">
+                  <div class="TestimonyClientName" id="Connie">Connie Wood</div>
+                  <div class="TestimonyRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <div class="TestimonyComment">
+                  Good hearted guy and he will do you right.
+                  </div>
+                  <!--
+                    Removing the last 3 dots for astetics
+                    <div class="ThreeDots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                  -->
+                </div>
+                
+              </div>
+        </div>
+        <div class="FourthRow NewRow">
+            <div class="SocialCard ThreeStack">
+                <div class="SocialContent">
+                    <div class="WhiteLogo">
+                      <p class="StephenWhite">Stephen</p><p class="HoneaWhite">Honea</p><p class="ComWhite">.com</p>
+                    </div>
+                    <div>
+                      <a href="https://wa.me/qr/NGT3BEPRMW4LL1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://www.facebook.com/StephenHoneaRealtor" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="mailto:Stephen@StephenHonea.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="https://www.linkedin.com/in/stephen-honea-26659243" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="BrokerCard ThreeStack">
+                <div class="HomeSmartContent">
+                    <div class="AcceptableHeader">
+                      <div class="AcceptableCapital">H</div><div class="AcceptableLower">ome</div><div class="AcceptableCapital">S</div><div class="AcceptableLower">mart&nbsp</div>
+                    </div>
+                    <div class="RealtySouth">Realty South</div>
+                    <div class="BayouAddress">1700 Belle Chasse Hwy Building B Suit 220<br>Gretna, LA 70056-7058</div>
+                  </div>
+            </div>
+            <div class="TestimonialCard ThreeStack">
+                <div class="slideshow-container">
+                    <!-- Starts the Testimonial -->
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Melmary Matheny</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Stephen Honea is the absolute best agent that anyone can work with. He was very patent with us. He took in...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Melmary')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Suzanne Parks Prout</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Outstanding realtor. Very professional and took care of all my buyers needs.</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Suzanne')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>	
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Phyllis Forest</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Regina and Stephen were a great team and made both selling the old home and purchasing the new home an easy...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Phyllis')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Charlotte</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Regina and Stephen, Charlotte and I would like to thank you both for the work you two put into the sale of...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Charlotte')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Glen Niven</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Stephen and Regina is definitely 5 Stars. This awesome team worked many hours to assure a great outcome for me...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Glen')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Joe Lucore</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Stephen and Regina were invaluable assets in the sale of our old home and purchase of our new home when we...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Joe')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Teresa Turner O'neal</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Great Guy with wonderful personality. He is extremely knowledgeable of the real estate market and what it takes...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Teresa')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Connie Wood</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Good hearted guy and he will do you right.</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Connie')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>	
+            
+                    <!-- Ends the Testimonial -->
+                  </div>
+            </div>
+            <div class="SocialCardMobile ThreeStack">
+              <div class="SocialContent">
+                  <div class="WhiteLogo">
+                    <p class="StephenWhite">Stephen</p><p class="HoneaWhite">Honea</p><p class="ComWhite">.com</p>
+                  </div>
+                  <div>
+                    <a href="https://wa.me/qr/NGT3BEPRMW4LL1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/StephenHoneaRealtor" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="mailto:Stephen@StephenHonea.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/stephen-honea-26659243" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+          </div>
+          <div class="BrokerCardMobile ThreeStack">
+              <div class="HomeSmartContent">
+                  <div class="AcceptableHeader">
+                    <div class="AcceptableCapital">H</div><div class="AcceptableLower">ome</div><div class="AcceptableCapital">S</div><div class="AcceptableLower">mart&nbsp</div>
+                  </div>
+                  <div class="RealtySouth">Realty South</div>
+                  <div class="BayouAddress">1700 Belle Chasse Hwy Building B Suit 220<br>Gretna, LA 70056-7058</div>
+                </div>
+          </div>
+        </div>
+        <div class="FifthRow NewRow">
+            <div class="CopyrightCard">
+                <div class="CopyrightContent">© 2019-2025 All rights reserved</div>
+            </div>
+        </div>
+
+
+
+    </div>
+</center>
+<script>
+    /////
+    // Script obtained from the w3school.com website
+    //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+    /////
+    
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("Recommendations");
+    // Disabeling the loop dots //
+    // let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}   
+    // Disabeling the loop dots //
+    // for (i = 0; i < dots.length; i++) {
+    //   dots[i].className = dots[i].className.replace(" active", "");
+    // }
+    slides[slideIndex-1].style.display = "block";  
+    // Disabeling the loop dots //
+    //dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 2 seconds
+  }
+  </script>
+</body>
+</html>    

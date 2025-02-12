@@ -1,50 +1,323 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Direct Upload Demo | Cloudflare Pages</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StephenHonea.com</title>
     <link href="style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="header">
-        <h3>Example project</h3>
-        <h1>Welcome to Cloudflare Pages</h1>
-        <p>
-          Upload your prebuilt assets directly to Pages and deploy <br />
-          your project to the Cloudflare edge within seconds.
-        </p>
-        <p>Create new deployments using:</p>
-        <section class="options">
-          <img src="assets/terminal.svg" />
-          <a
-            href="https://dash.cloudflare.com/?to=/:account/pages/new/wrangler-guide"
-            target="_blank"
-            > Wrangler CLI</a
-          >
-          <img src="assets/cloud-upload.svg" />
-          <a
-            href="https://dash.cloudflare.com/?to=/:account/pages/new/upload"
-            target="_blank"
-            > Dashboard</a
-          >
-        </section>
-      </div>
-
-      <section class="learn-more">
-        <a
-          href="https://developers.cloudflare.com/pages/platform/direct-uploads"
-        >
-          <button>Learn more</button>
-        </a>
-      </section>
-      <div class="logo">
-        <a href="https://pages.cloudflare.com/" target="_blank">
-          <img src="assets/cloudflare-pages.svg"
-        /></a>
-      </div>
+	<script src="https://kit.fontawesome.com/5fd7022fb8.js" crossorigin="anonymous"></script>
+	<style>		
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	</style>
+</head>
+<body>
+    <!-- Centering the Entire Document -->
+    <center> 
+    <div class="Container">
+        <div class="FirstRow">
+            <div class="Logo"><p class="LogoStephen Quicksand">Stephen</p><p class="LogoHonea Quicksand">Honea</p><p class="LogoCom Quicksand">.com</p></div>
+            <div class="Menu"><a href="testimonial.html">Reviews</a></div>
+        </div>
+        <div class="SecondRow NewRow">
+            <div class="AgentCard ThreeStack">
+                <div class="AgentHeading Poppins">
+                    Listing &<br>
+                    Property<br>
+                    Management<br>
+                    Agent<br>
+                  </div>
+                  <div class="AgentContent Poppins">Listing your home isn’t easy. Managing your investments isn’t a stroll through the park, either. If you’re looking for a quality agent to work with you, relieve the stress, and help accomplish your goals, give me a call. It’s what I do.</div>
+                  <div class="CallMeButton">
+                      <a href="tel:5042988101">
+                      <button class="Jost">504.298.8101</button>
+                      </a>
+                  </div>
+            </div>
+            <div class="ManCarryingWomanCard ThreeStack"><img class="FirstTimeBuyers" src="./images/FirstTimeBuyers-2048x1367.jpg"></div>
+            <div class="AppointmentCard ThreeStack">
+                <div class="BookAppointmentContent Poppins">
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i> Prefer to schedule a meeting?</p>
+                    <div class="BookAnAppointmentButton">
+                        <!-- Google Calendar Appointment Scheduling begin -->
+                        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                        <script>
+                        (function() {
+                          var target = document.currentScript;
+                          window.addEventListener('load', function() {
+                            calendar.schedulingButton.load({
+                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2JXzBXOYEoNYDl8iZEeDPw-Ei_sdatbrU26X1_nNiyjqELcO1mOuvcbkD8rihS51jR5lCgmbYb?gv=true',
+                              color: '#38629F',
+                              label: 'Book an appointment',
+                              target,
+                            });
+                          });
+                        })();
+                        </script>
+                        <!-- end Google Calendar Appointment Scheduling -->
+                    </div>
+                    <img class="CoupleLaughing" src="./images/0029-1.jpg"></div>
+            </div>
+        </div>
+        <div class="ThirdRow NewRow">
+            <div class="FormBlock">
+                <div class="FormBlueBlock"></div>
+            </div>
+        </div>
+        <div class="ThirdRow300up NewRow">        
+                <div class="ClientFormCard TwoStack">
+                    <div class="InputPage"> 
+                        <div class="InputForm"> 
+                        <!-- This is the google form exporter website -->
+                        <!-- https://stefano.brilli.me/google-forms-html-exporter/?ref=mrinalcs.github.io -->
+                          <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKmTo8NHWTlPWvvkD6DLdfXQHw4hWPNeTkYR-MkFfFQV7nqw/formResponse" target="_blank" id="bootstrapForm" method="POST">
+                          <div class="FormLabel Info"><label for="Info"><b>Client Information Form:</b><br> Please fillout the information below and click the button to get started.</label></div>
+                          <div class="FormLabel FirstName"><label for="FirstName">First name</label></div>
+                          <div class="FormInput FirstInput"><input class="FormInputText" type="text" id="1085527607" name="entry.1085527607" placeholder="John"></div>
+                          <div class="FormLabel LastName"><label for="LastName">Last Name</label></div>
+                          <div class="FormInput LastInput"><input class="FormInputText" type="text" id="1442272483" name="entry.1442272483" placeholder="Smith"></div>
+                          <div class="FormLabel Email"><label for="Email">Email</label><br></div>
+                          <div class="FormInput EmailInput"><input class="FormInputText" type="text" id="1631307393" name="entry.1631307393" placeholder="JohnSmith@gmail.com"></div>
+                          <div class="FormLabel Phone"><label for="Phone">Phone/Mobile</label></div>
+                          <div class="FormInput PhoneInput"><input class="FormInputText" type="text" id="321363079" name="entry.321363079" placeholder="504-298-8101"></div>
+                          <div class="FormLabel PropertyType"><label for="PropertyType">Property Type</label></div>
+                          <div class="FormSelect PropertyInput"><select class="SelectForm" name="entry.54641243" id="1881457740">
+                                <option value=""></option>
+                              <option value="Residential">Residential</option>
+                              <option value="Commercial">Commercial</option>
+                              <option value="Land">Land</option>
+                            </select></div>
+                          <div class="FormLabel Referral"><label for="Referral">How did you hear about me?</label></div>
+                          <div class="FormSelect ReferralInput"><select class="SelectForm" name="entry.1672686701" id="196099539">
+                                <option value=""></option>
+                                <option value="Friend">Friend</option>
+                                <option value="Flyer">Flyer</option>
+                                <option value="Word Of Mouth">Word Of Mouth</option>
+                                <option value="HomeSmart">HomeSmart</option>
+                                <option value="Zillow">Zillow</option>
+                                <option value="Realtor.com">Realtor.com</option>
+                            </select></div>
+                            <div class="FormSubmit"><input class="SubmitForm" type="submit" value="Click to get Started"></div>
+                                <input type="hidden" name="fvv" value="1">
+                                <input type="hidden" name="fbzx" value="-8629244577906713604">
+                                <!--
+                                    CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                                    This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                                    Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                                    We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                                -->
+                                <input type="hidden" name="pageHistory" value="0">
+                          </form>
+                          </div>
+                      </div>
+                </div>
+                <div class="HomeBuyingCard TwoStack">
+                    <div class="BuyerCardHeading">
+                        Buying a home?
+                      </div>
+                        <div class="BuyerCardContent">
+                        Whether you’re a first-time home buyer, or a seasoned buyer, the process of buying a home can be a complex one. I can be involved as little or a lot, depending on the situation. I have helped many homeowners navigate the buying process. I would love the opportunity to help you. Give me a call.
+                      </div> 
+                        <div class="BuyerCardBorder">
+                        <div class="BuyerCardImage">
+                          <img class="BoxGirl" src="./images/BoxGirl.jpg">
+                          <div class="layer"></div>  <!-- Difusing Layer over Image -->
+                        </div>
+                      </div>
+                </div>
+                <div class="ClientFormCardMobile TwoStack">
+                  <div class="InputPage"> 
+                      <div class="InputForm"> 
+                      <!-- This is the google form exporter website -->
+                      <!-- https://stefano.brilli.me/google-forms-html-exporter/?ref=mrinalcs.github.io -->
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKmTo8NHWTlPWvvkD6DLdfXQHw4hWPNeTkYR-MkFfFQV7nqw/formResponse" target="_blank" id="bootstrapForm" method="POST">
+                        <div class="FormLabel Info"><label for="Info"><b>Client Information Form:</b><br> Please fillout the information below and click the button to get started.</label></div>
+                        <div class="FormLabel FirstName"><label for="FirstName">First name</label></div>
+                        <div class="FormInput FirstInput"><input class="FormInputText" type="text" id="1085527607" name="entry.1085527607" placeholder="John"></div>
+                        <div class="FormLabel LastName"><label for="LastName">Last Name</label></div>
+                        <div class="FormInput LastInput"><input class="FormInputText" type="text" id="1442272483" name="entry.1442272483" placeholder="Smith"></div>
+                        <div class="FormLabel Email"><label for="Email">Email</label><br></div>
+                        <div class="FormInput EmailInput"><input class="FormInputText" type="text" id="1631307393" name="entry.1631307393" placeholder="JohnSmith@google.com"></div>
+                        <div class="FormLabel Phone"><label for="Phone">Phone/Mobile</label></div>
+                        <div class="FormInput PhoneInput"><input class="FormInputText" type="text" id="321363079" name="entry.321363079" placeholder="504-298-8101"></div>
+                        <div class="FormLabel PropertyType"><label for="PropertyType">Property Type</label></div>
+                        <div class="FormSelect PropertyInput"><select class="SelectForm" name="entry.54641243" id="1881457740">
+                              <option value=""></option>
+                            <option value="Residential">Residential</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Land">Land</option>
+                          </select></div>
+                        <div class="FormLabel Referral"><label for="Referral">How did you hear about me?</label></div>
+                        <div class="FormSelect ReferralInput"><select class="SelectForm" name="entry.1672686701" id="196099539">
+                              <option value=""></option>
+                              <option value="Friend">Friend</option>
+                              <option value="Flyer">Flyer</option>
+                              <option value="Word Of Mouth">Word Of Mouth</option>
+                              <option value="HomeSmart">HomeSmart</option>
+                              <option value="Zillow">Zillow</option>
+                              <option value="Realtor.com">Realtor.com</option>
+                          </select></div>
+                          <div class="FormSubmit"><input class="SubmitForm" type="submit" value="Click to get Started"></div>
+                              <input type="hidden" name="fvv" value="1">
+                              <input type="hidden" name="fbzx" value="-8629244577906713604">
+                              <!--
+                                  CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                                  This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                                  Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                                  We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                              -->
+                              <input type="hidden" name="pageHistory" value="0">
+                        </form>
+                        </div>
+                    </div>
+              </div>
+        </div>
+        <div class="FourthRow NewRow">
+            <div class="SocialCard ThreeStack">
+                <div class="SocialContent">
+                    <div class="WhiteLogo">
+                      <p class="StephenWhite">Stephen</p><p class="HoneaWhite">Honea</p><p class="ComWhite">.com</p>
+                    </div>
+                    <div>
+                      <a href="https://wa.me/qr/NGT3BEPRMW4LL1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://www.facebook.com/StephenHoneaRealtor" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="mailto:Stephen@StephenHonea.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="https://www.linkedin.com/in/stephen-honea-26659243" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="BrokerCard ThreeStack">
+                <div class="HomeSmartContent">
+                    <div class="AcceptableHeader">
+                      <div class="AcceptableCapital">H</div><div class="AcceptableLower">ome</div><div class="AcceptableCapital">S</div><div class="AcceptableLower">mart&nbsp</div>
+                    </div>
+                    <div class="RealtySouth">Realty South</div>
+                    <div class="BayouAddress">1700 Belle Chasse Hwy Building B Suit 220<br>Gretna, LA 70056-7058</div>
+                  </div>
+            </div>
+            <div class="TestimonialCard ThreeStack">
+                <div class="slideshow-container">
+                    <!-- Starts the Testimonial -->
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Melmary Matheny</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Stephen Honea is the absolute best agent that anyone can work with. He was very patent with us. He took in...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Melmary')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Suzanne Parks Prout</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Outstanding realtor. Very professional and took care of all my buyers needs.</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Suzanne')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>	
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Phyllis Forest</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Regina and Stephen were a great team and made both selling the old home and purchasing the new home an easy...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Phyllis')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Charlotte</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Regina and Stephen, Charlotte and I would like to thank you both for the work you two put into the sale of...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Charlotte')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Glen Niven</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Stephen and Regina is definitely 5 Stars. This awesome team worked many hours to assure a great outcome for me...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Glen')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Joe Lucore</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Stephen and Regina were invaluable assets in the sale of our old home and purchase of our new home when we...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Joe')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Teresa Turner O'neal</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Great Guy with wonderful personality. He is extremely knowledgeable of the real estate market and what it takes...</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Teresa')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>
+                    
+                    <div class="Recommendations fade">
+                      <div class="RecClientName">Connie Wood</div>
+                      <div class="RecClientRating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <div class="RecClientComment">Good hearted guy and he will do you right.</div>
+                      <div class="ReadMore" onclick="window.open('./testimonial.html#Connie')">Read More <i class="fa-solid fa-up-right-from-square"></i></div>
+                    </div>	
+            
+                    <!-- Ends the Testimonial -->
+                  </div>
+            </div>
+            <div class="SocialCardMobile ThreeStack">
+              <div class="SocialContent">
+                  <div class="WhiteLogo">
+                    <p class="StephenWhite">Stephen</p><p class="HoneaWhite">Honea</p><p class="ComWhite">.com</p>
+                  </div>
+                  <div>
+                    <a href="https://wa.me/qr/NGT3BEPRMW4LL1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/StephenHoneaRealtor" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="mailto:Stephen@StephenHonea.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/stephen-honea-26659243" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+          </div>
+          <div class="BrokerCardMobile ThreeStack">
+              <div class="HomeSmartContent">
+                  <div class="AcceptableHeader">
+                    <div class="AcceptableCapital">H</div><div class="AcceptableLower">ome</div><div class="AcceptableCapital">S</div><div class="AcceptableLower">mart&nbsp</div>
+                  </div>
+                  <div class="RealtySouth">Realty South</div>
+                  <div class="BayouAddress">1700 Belle Chasse Hwy Building B Suit 220<br>Gretna, LA 70056-7058</div>
+                </div>
+          </div>
+        </div>
+        <div class="FifthRow NewRow">
+            <div class="CopyrightCard">
+                <div class="CopyrightContent">© 2019-2025 All rights reserved</div>
+            </div>
+        </div>
     </div>
-  </body>
+    </center>
+    <script>
+        /////
+        // Script obtained from the w3school.com website
+        //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+        /////
+        
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("Recommendations");
+        // Disabeling the loop dots //
+        // let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}   
+        // Disabeling the loop dots //
+        // for (i = 0; i < dots.length; i++) {
+        //   dots[i].className = dots[i].className.replace(" active", "");
+        // }
+        slides[slideIndex-1].style.display = "block";  
+        // Disabeling the loop dots //
+        //dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 8000); // Change image every 2 seconds
+      }
+      </script>
+</body>
 </html>

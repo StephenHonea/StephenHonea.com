@@ -1,159 +1,771 @@
+
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Corrects border displacement */
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue",  Arial, sans-serif;
-  margin: auto;
+  margin: auto; 
 }
 
-.bg-image {
-  position: absolute;
-  bottom: -88%;
+/* Page Variables :root */
+/* --MaxPageWidth: 1200px; Setting the page's Mas width */
+:root {
+  --MaxContainerWidth: 1000px;
+  --HoverColor: #1A976A;
+  --FocusColor: #38629f;
+  --FillColor: #244E8A;
+  --block-primary: #9BCAE8;
+  --block-secondary: #AFD5ED;
+  --block-gradient: linear-gradient( -90deg, var(--block-primary), var(--block-secondary) );
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 165px 0 124px;
-  width: 100%;
-  margin: auto;
-  border: #fbab40;
-  height: 100vh;
-  background-color: #242628;
-  background-image: url(./assets/world.svg);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 70px;
-  background-origin: padding-box;
-}
+  /* Loading a local font for the HomeSmart Logo */
+  @font-face {
+      font-family: "Acceptable JNL";
+    src: url("./fonts/Acceptable/Acceptable.eot");
+    src: url("./fonts/Acceptable/Acceptable.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/Acceptable/Acceptable.woff2")format("woff2"),
+    url("./fonts/Acceptable/Acceptable.woff")format("woff"),
+    url("./fonts/Acceptable/Acceptable.ttf")format("truetype");
+  }
 
-.header h3 {
-  text-align: center;
-  color: #ff9e40;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
+  .Container{
+    width:100%;
+    max-width: var(--MaxContainerWidth);
+    height: 100%;
+    border: 0px solid green;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .NewRow{
+    clear:both;
+    margin: 0px;
+    display: flex;
+  }
+
+  .ThreeStack{
+    width: 33.3%;
+    float: left;
+    border: 0px solid #444;
+    min-height: 30px;
+    margin: 0px;
+  }
+
+  .TwoStack{
+    width: 50%;
+    float: left;
+    border: 0px solid #444;
+    min-height: 30px;
+    margin: 0px;
+   }
+
+  .Logo {
+    float: left;
+    padding: 0 0 0 0;
+  }
+
+  .Logo p{
+    display: inline-block;
+    position: relative;     
+  }
+
+  .Quicksand{
+    font-family: "Quicksand", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+
+  .Poppins{
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 1.0em;
+  }
+
+  .Jost{
+    font-family: "Jost", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+
+  .LogoHonea{
+    font-weight: 700;
+   }
+
+  .LogoCom{
+    transform: translateX(-100%) rotate(-90deg);
+    transform-origin: right;
+    left: 5px; /* change this value to match needs */
+    top: -1.4em; /* change this value to match needs */
+    font-weight: 700;
+    font-size: .7em;
+    line-height: .7em;
+  }
+
+  .Menu{
+    float:Right;
+  }
+
+  .AgentCard{
+    width: 35%;
+  }
+
+ .AgentHeading{
+  text-align: left;    
   margin: 0;
-  line-height: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  padding: 10px 10px 0px 10px;   /* Top Right Bottom Left */
+  border: 0px solid green;
 }
 
-.header {
-  display: flex;
+  .AgentContent{
+    text-align: left;    
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding: 20px 20px 20px 20px;   /* Top Right Bottom Left */
+  }
+
+  .ManCarryingWomanCard{
+    width: 30%;
+  }
+
+  .AppointmentCard{
+    position: relative;
+    width: 35%;
+  }
+  .ClientFormCard{
+    float: left;
+    margin: 0px;
+   }
+
+   .BrokerCardMobile, .SocialCardMobile, .ClientFormCardMobile{
+    visibility: hidden;
+    display: none;
+   }
+
+  .HomeBuyingCard{
+    float: Right;
+    padding:20px;
+  }
+
+  .CopyrightCard{
+    float:Right;
+    width:100%;
+    background: #244E8A;
+  }
+
+  .CallMeButton > a > button {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    background: #38629F;
+    border-radius: 0px;
+    width: 100%;
+    height: 55px;
+    color: #ffffff;
+    text-align: center;
+    background: var(--FocusColor);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: 0px solid green; 
+  }
+
+  .CallMeButton{
+    padding: 10px 10px 10px 10px;   /* Top Right Bottom Left */
+  }
+
+  .CallMeButton > a > button:hover{
+    background: var(--HoverColor);
+  }
+
+  .FirstTimeBuyers{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+  }
+  .CoupleLaughing{
+    width: 100%;
+      padding: 0px;
+      display: block;
+  }
+
+  .BookAppointmentContent{
+      text-align: left;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: 0px solid yellow; 
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.2em;
+      line-height: 1.2em;
+      padding: 10px;
+  }
+  .BookAppointmentContent p{
+      font-size: 1.1em;
+      line-height: 1.1em;
+  }
+
+  /*
+  Google button styling from google java scrypt 
+  */
+  button.qxCTlb{
+      border-radius: 0px;
+      font-family: "Quicksand", serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.3em;
+      line-height: 1.3em;
+      border-color: #ffffff;
+  }
+
+  button.qxCTlb:hover{
+      background: var(--HoverColor) !important; /* !important is necessary to overide the styling from Google  */
+  }
+
+  .BookAnAppointmentButton{
+      padding: 10px 10px 10px 0px;   /* Top Right Bottom Left */
+  }
+
+  .FormBlueBlock {
+    background-image: var(--block-gradient);
+    position: absolute;
+    width: 100%;
+   /* max-width: var(--MaxPageWidth);*/
+    height: 100%;  
+    z-index: -2;
+  }
+
+  .FormBlock{
+    width: 100%;
+    position: relative;
+    height: 300px; 
+    top: 0;
+    margin: 0;
+    z-index: -1;  
+  }
+
+  .InputPage{
+    padding: 70px 30px 10px 30px;   /* Top Right Bottom Left */	
+  }
+
+  .InputForm{
+    background: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+  }
+  
+  .FormLabel, .FormInput, .FormInputText, .SelectForm, .FormSelect, .CopyrightContent{
+    margin: 0;
+    width: 100%;
+    text-align:left;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding: 15px 32px 5px 32px;   /* Top Right Bottom Left */
+    border: 0px solid green;
+  }
+
+  .FormInput, .FormSelect{
+    padding: 0px 20px 0px 20px;   /* Top Right Bottom Left */	
+  }
+  
+  .FormSubmit{
+    padding: 30px 32px 30px 32px;   /* Top Right Bottom Left */	
+  }
+  
+  .SubmitForm{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    background: var(--FocusColor);
+    border-radius: 0px;
+    border: none;
+    width: 100%;
+    height: 55px;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }  
+  
+  .FormInputText, .SelectForm{
+    font-size: 1.0em;
+    line-height: 1.0em;	
+    border: 1px solid var(--FocusColor);
+    border-radius: 0px;
+    padding: 2px 10px 2px 10px;   /* Top Right Bottom Left */
+    background: #FCFCFC;
+  }
+  
+  ::placeholder {
+    color: #D0D0D0;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #D0D0D0;
+  }
+
+  .SubmitForm:hover{
+    background-color: var(--HoverColor);
+  }
+
+  .ThirdRow300up{
+    margin-top: -300px;
+    text-align: left;
+  }
+
+  .BuyerCardHeading{
+    font-weight: 400;
+    font-size: 2.0em;
+    line-height: 1.0em;
+  }
+  
+  .BuyerCardContent{
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    padding: 10px 20px 10px 20px;   /* Top Right Bottom Left */
+  }
+  
+  .BuyerCardBorder{
+    padding:10px;
+    border: 0px solid blue; 
+    top: 0;
+    margin: 0;
+  }
+  
+  .BuyerCardImage{
+    position:relative;
+  }
+  
+  .layer {
+    background-color: rgba(248, 247, 216, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--FocusColor); 
+  }
+
+  .BoxGirl{
+    width: 100%;
+    object-fit: cover;	
+  }
+
+  .FourthRow{
+    background: var(--FocusColor);
+    color: #ffffff;
+    flex-direction: row;
+    align-items: center;
+    height:165px;
+  }
+
+  .WhiteLogo{
+    float: left ;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px 5px 5px;   /* Top Right Bottom Left */ 
+    border: 0px solid blue;
+  }
+
+  .SocialContent{
+    display: inline-block;
+    border: 0px solid green;	
+  }
+
+  .BayouAddress{
+    color: #ffffff;
+    font-size: .8em;
+    line-height: 1em;
+    padding: 10px 5px 10px 5px;   /* Top Right Bottom Left */
+  }
+  
+  .fa-whatsapp, .fa-facebook, .fa-envelope, .fa-linkedin{
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 1em;
+    padding: 5px 5px 5px 5px;   /* Top Right Bottom Left */
+  }
+  .fa-whatsapp:hover, .fa-facebook:hover, .fa-envelope:hover, .fa-linkedin:hover{
+      /*color: #AFD5ED;*/
+      color: var(--HoverColor);
+      font-size: 2.4em;
+      padding: 0px 2px 0px 2px;   /* Top Right Bottom Left */
+  }
+  
+  .StephenWhite, .HoneaWhite, .ComWhite{
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.0em;
+    line-height: 1em;
+    color: #ffffff;
+  }
+  
+  .HoneaWhite{
+    font-weight: 700;
+  }
+  
+   .ComWhite{
+    padding: 0 0 0 0;
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: .7em;
+    line-height: .7em;
+    transform: translateX(-100%) rotate(-90deg);
+    transform-origin: right;
+  }
+
+  .AcceptableHeader{
+    padding: 10px 10px 0px 10px;   /* Top Right Bottom Left */
+    border: 0px solid red;
+  }
+  
+  .AcceptableCapital, .AcceptableLower{
+    display: inline-block; 
+    font-family: "Acceptable JNL";
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .AcceptableCapital{
+    font-size: 70px;
+    border: 0px solid red;
+    margin-top:-15px;
+    color: #ffffff;
+  }
+  
+  .AcceptableLower{
+    font-size: 50px;
+    vertical-align: top;
+    color: #ffffff;
+  }
+
+  .RealtySouth{
+    color: #ffffff;
+    letter-spacing: .32em;
+    font-weight: 400;
+    font-size: 1.13em;
+    line-height: 1.13em;
+    border: 0px solid red;
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 200px;
+    /* width: 320px; */
+    padding-bottom: 1rem;
+  }
+    
+  .rating>input {
+    flex: 1 1 0%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+  }
+    
+  .rating>input::before {
+    content: '⭐';
+    filter: grayscale(100%) contrast(200%);
+    font-size: 200%;
+  }
+  
+  .rating>input:checked::before,
+  .rating>input:checked~input::before {
+    filter: unset;
+  }
+
+  .Recommendations {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
+  margin: auto;
+  padding: 10px 10px 10px 10px;   /* Top Right Bottom Left */
+  min-height: 165px;
+  border: 0px solid red;
+}
+
+.ThreeDots{
+  padding: 10px 10px 10px 10px;   /* Top Right Bottom Left */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #38629F;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.RecClientName, .RecClientComment, .TestimonyClientName, .TestimonyComment, .ReviewRequest{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 300;
   font-style: normal;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  padding: 0px 5px 2px 5px;   /* Top Right Bottom Left */
+  color: #ffffff;
 }
 
-.header > h1 {
+.TestimonyClientName, .TestimonyComment{
+	  color: #000000;
+}
+
+.RecClientRating, .TestimonyRating{ 
+  width: 100%;
+  text-align: left;
+  color: #ffffff;	
+  padding: 2px 5px 2px 5px;   /* Top Right Bottom Left */
+  &
+   .fa-star{
+	   color: #F6BB06;	
+	   padding: 0px 1px 0px 1px;   /* Top Right Bottom Left */
+   }
+}
+
+.RecClientComment, .TestimonyComment{
   font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
+  font-size: .9em;
+  line-height: 1.3em;
+  padding: 5px 15px 5px 15px;   /* Top Right Bottom Left */	
 }
 
-.header > p {
+.TestimonyComment{
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.ReviewRequest{
+  max-width:500px;
+  color: #000000;
+  padding: 15px 0px 5px 0px;   /* Top Right Bottom Left */	
+}
+
+.box {
+  background-image: repeating-linear-gradient(90deg, #000000, #000000 12px, transparent 12px, transparent 16px), repeating-linear-gradient(180deg, #000000, #000000 12px, transparent 12px, transparent 16px), repeating-linear-gradient(90deg, #000000, #000000 12px, transparent 12px, transparent 16px), repeating-linear-gradient(180deg, #000000, #000000 12px, transparent 12px, transparent 16px);
+  background-position: left top, right top, left bottom, left top;
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+  padding: 5px 10px 5px 10px;   /* Top Right Bottom Left */	
+  &
+  .fa-up-right-from-square{
+	font-style: normal;
+    font-size: .7em;
+  }
+}
+
+.ReadMore{
+  color: #ffffff;
+  font-family: "Poppins", serif;
+  font-weight: 300;
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-  text-align: center;
-  color: #ffffff;
-  flex-grow: 0;
-  margin: 16px 0px;
+  font-size: 1em;
+  line-height: 1em;
+  cursor: pointer;	
+  background: #244E8A;
+  padding: 5px 5px 5px 5px;   /* Top Right Bottom Left */	
 }
 
-.options {
-  display: flex;
-  flex-direction: row;
+.ReadMore:hover{
+  background: #1A976A; 
 }
+  
+.CopyrightContent{
+    padding: 10px 10px 10px 10px;   /* Top Right Bottom Left */
+    color: #ffffff;
+    font-size: .8em;
+    line-height: .8em;	  
+    margin: 0;
+    width: 100%;
+    text-align:right;  
+    background: #244E8A;
+  }
 
-.options > a {
-  color: #ffffff;
-  text-decoration: underline;
-  margin: 0px 8px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-}
+  .TestimonialCard{
+    width: 35%;
+  }
 
-.options > a:first-of-type {
-  margin-right: 30px;
-}
+  .BrokerCard{
+    width: 30%;
+  }
 
-.logo {
-  margin-top: 75px;
-}
+  .SocialCard{
+    width:35%;
+  }
 
-.logo > img {
-  width: 160px;
-  height: 64px;
-}
-
-.learn-more > a > button {
-  background: #f6821f;
-  border-radius: 4px;
-  border: none;
-  width: 180px;
-  margin-top: 78px;
-  height: 55px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  background: rgba(246, 130, 31, 1);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1024px) {
-    .container {
-        background-size: contain;
-        background-position-y: center;
+  .GoogleFieldSet, .LocalTestimonialFieldSet{
+    height: 100%;
+    border: 0px black dashed;
+    background-image: repeating-linear-gradient(90deg, #000000, #000000 12px, transparent 12px, transparent 16px), repeating-linear-gradient(180deg, #000000, #000000 12px, transparent 12px, transparent 16px), repeating-linear-gradient(90deg, #000000, #000000 12px, transparent 12px, transparent 16px), repeating-linear-gradient(180deg, #000000, #000000 12px, transparent 12px, transparent 16px);
+    background-position: left top, right top, left bottom, left top;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+    padding: 5px 10px 5px 10px;   /* Top Right Bottom Left */	
+    &
+    .fa-up-right-from-square{
+    font-style: normal;
+      font-size: .7em;
     }
+  }
+
+  .GoogleLegend, .LocalTestimonialLegend{
+    margin-left: 15px;
+    padding: 0px 5px 0px 5px;   /* Top Right Bottom Left */
+    background: #ffffff;
+    font-size: 1.5em;
+    line-height: 1.5em;	  
+    font-weight: 400;
+  }
+
+  .TestimonialForm{
+    border: 0px solid red;
+    width:100%;
+    height: 100%;
+  }
+
+  .LocalTestimonialCard, .GoogleReviewCard{
+    border: 0px solid green;
+    padding: 0px 20px 0px 20px;   /* Top Right Bottom Left */  
+  }
+
+  .PreviousReviews{
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5em;	  
+    font-weight: 400;
+    padding: 30px 10px 30px 10px;   /* Top Right Bottom Left */    
 }
 
+  .PreviousReviews hr{
+    border-top: 2px dashed #1A976A;
+}
+
+.TestimonialContent{
+  padding: 0px 30px 20px 30px;   /* Top Right Bottom Left */  
+}
+
+.FormInputRating{
+  padding: 10px 0px 15px 0px;   /* Top Right Bottom Left */  
+}
+
+  /* Shrinking below smart phone screen size converts the columns into rows */
 @media screen and (max-width: 600px) {
+  /*@media (min-width: 35em) {*/
 
-.container{
-    background-size: contain;
-    background-position-y: center;
-    }
-  pre {
-    font-size: 0.8rem;
-    padding: 8px 12px;
+  .FirstRow{
+    width: 100%;    
+    border: 0px solid red;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;   /* Top Right Bottom Left */
+  }
+
+  .SecondRow{
+    padding: 5px 10px 5px 10px;   /* Top Right Bottom Left */
+  }
+
+  .ThirdRow300up{
+    margin: 0px;
+  }
+
+  .Logo{
+    width: 100%;
+    text-align: left;
+  }
+
+  .Menu{
+    width: 100%;
+    text-align: right
+  }
+
+  .NewRow{
+    clear:none;
+    display: flex;
+    flex-wrap: wrap;    
+  }
+
+  .ThreeStack, .TwoStack{
     width: 100%;
   }
 
-  body {
-    width: 100vw;
+   .CallMeButton{
+    display: inline-block;
+   }
+
+  .ManCarryingWomanCard, .FormBlock, .ClientFormCard, .BrokerCard, .SocialCard{
+    display: none;
   }
 
-  .header img {
-    margin-left: 0;
+  .BookAppointmentContent{
+    position: relative;
+  }
+.BrokerCardMobile, .SocialCardMobile, .ClientFormCardMobile{
+  visibility: visible;
+  display: block;
+ }
+
+  .InputPage{
+    padding: 10px 30px 30px 30px;   /* Top Right Bottom Left */	
   }
 
-  .installation-steps {
+  .SocialCard, .TestimonialCard, .BrokerCard{
     width: 100%;
-    box-sizing: border-box;
   }
 
-  h1 {
-    font-size: 1.6rem;
+  .FourthRow{
+    height:100%;  
   }
 
-  ol {
-    padding-left: 20px;
+  .SocialCardMobile{
+    padding-bottom: 25px;
   }
 
-  li {
-    margin-bottom: 5px;
+  .CallMeButton > a > button {
+    width: 250px;
   }
+
 }
